@@ -1,0 +1,64 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+.main, .block{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.main{
+      width: 100%;
+      height: 937px;
+      background-color: rgb(170, 172, 172);
+}
+.block{
+      width: 20%;
+      height: 5%;
+      justify-content: space-evenly;
+}
+.white, .red, .orange, .yellow, .blue, .green, .violet, .black{
+      width: 8%;
+      height: 60%;
+      border-radius: 50%;
+      animation-name: fly ;
+      animation-duration: 1s;
+      animation-iteration-count: 5;
+      animation-direction: alternate;
+}
+.white{
+      background-color: #fff;
+}
+.red{
+      background-color: red;
+}
+.orange{
+      background-color: orange;
+}
+.yellow{
+      background-color: yellow;
+}
+.blue{
+      background-color: blue;
+}
+.green{
+      background-color: green;
+}
+.violet{
+      background-color: rgb(128, 9, 184);
+}
+.black{
+      background-color: black;
+}
+@keyframes fly{
+      30%{
+            outline: 3px solid rgba(0, 0, 0, 0.404);
+      }
+      60%{
+            outline: 6px solid rgba(0, 0, 0, 0.404);
+      }
+      90%{
+            outline: 9px solid rgba(0, 0, 0, 0.404);
+      }
+}
